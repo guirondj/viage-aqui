@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje Aqui</title>
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <div class="buscar">
+        <label for="buscar">Pesquisar</label>
+            <input type="text" name="buscar" id="buscar" placeholder="Ex: Litoral Norte">
+        </div>
+        <div class="user">
+                <a href="./login.html" target="_parent" rel="noopener noreferrer">Login</a>
+
+                <a href="#">Cadastre-se</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="left">
+            <div class="cidades">
+                <ul>
+                    <li>São Paulo</li>
+                    <li>Rio De Janeiro</li>
+                    <li>Bahia</li>
+                    <li>Pernabumco</li>
+                    <li>Amazonas</li>
+                </ul>
+            </div>
+
+            <div class="valores">
+                <label for="valor-minimo">Valor: </label>
+                <input type="number" name="valor-minimo" id="valor-minimo" placeholder=" R$: Minimo">
+
+                <label for="valor-maximo">Valor: </label>
+                <input type="number" name="valor-maximo" id="valor-maximo" placeholder=" R$: Maximo">
+            </div>
+
+        </div>
+
+        <div class="right debug">
+            <div class="cards ">
+                <div class="card debug">
+                    <img src="./src/image/casa3.jpg" alt="">
+                    <h2>titulo</h2>
+                    <p>descrição</p>
+                </div>
+
+                <div class="card debug">
+                    <img src="./src/image/casa1.avif" alt="">
+                    <h2>titulo</h2>
+                    <p>descrição</p>
+                </div>
+
+                <div class="card debug">
+                    <img src="./src/image/casa2.jpg" alt="">
+                    <h2>titulo</h2>
+                    <p>descrição</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>

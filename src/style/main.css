@@ -1,0 +1,109 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: black url(../image/praia.avif) center no-repeat fixed;
+    background-size: cover;
+}
+
+header{
+    background-color: #a2a2a298;
+    color: rgb(0, 0, 0);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 5rem;
+}
+
+.debug{
+    border: solid 1px red;
+}
+
+.user{
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.user a{
+    color: #ffffff;
+    background-color: rgba(53, 53, 53, 0.471);
+    padding: 0.3rem;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #0000009b;
+}
+
+.user a:hover{
+    color: #0000ff;
+    background-color: rgba(129, 129, 129, 0.471);
+}
+
+/* container geral */
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+/* lado esquerdo */
+
+.left{
+    width: 20%;
+    height: 383px;
+    background-color: #a2a2a298;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.cidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.valores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Lado direito */
+
+.right{
+    width: 80%;
+    background-color: #a2a2a298;
+    display: flex;
+}
+
+.cards{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 25vw;
+    height: 50vh;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}

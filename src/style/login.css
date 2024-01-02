@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("../image/praia.avif");
+    background-size: cover;
+}
+
+.container{
+    width: 15.6rem;
+    height: 60vh;
+
+    background-color: #43434382;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+    box-shadow: 5px 5px 5px #00000097;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.button button{
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.542);
+}
+
+.email input, .senha input{
+    border: none;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.542);
+}
