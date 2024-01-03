@@ -1,9 +1,15 @@
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background: black url(../image/praia.avif) center no-repeat fixed;
+    background: black url(../image/praia.jpg) center no-repeat fixed; 
     background-size: cover;
 }
+
+.debug{
+    border: solid 1px red;
+}
+
+/* Header */
 
 header{
     background-color: #a2a2a298;
@@ -12,22 +18,20 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    height: 5rem;
-}
-
-.debug{
-    border: solid 1px red;
+    width: 100%;
+    height: 5.6rem;
 }
 
 .user{
     width: 10rem;
     display: flex;
     justify-content: space-around;
+    gap: 15px;
 
 }
 
 .user a{
+    font-size: 0.8rem;
     color: #ffffff;
     background-color: rgba(53, 53, 53, 0.471);
     padding: 0.3rem;
@@ -44,15 +48,16 @@ header{
 /* container geral */
 
 .container{
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
 }
 
 /* lado esquerdo */
 
 .left{
     width: 20%;
-    height: 383px;
+    height: 100vh;
     background-color: #a2a2a298;
 
     display: flex;
@@ -76,10 +81,12 @@ header{
     flex-direction: column;
 }
 
+
 /* Lado direito */
 
 .right{
     width: 80%;
+    height: 100vh;
     background-color: #a2a2a298;
     display: flex;
 }
@@ -99,11 +106,11 @@ header{
     justify-content: space-around;
     align-items: center;
 
-    width: 25vw;
+    width: 23vw;
     height: 50vh;
 }
 
 .card img{
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
 }
