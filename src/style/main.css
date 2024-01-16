@@ -100,7 +100,6 @@ header{
     from{
         opacity: 0;
         transform: translate3d(0, -30px, -5px);
-
     }
     to{
         opacity: 1;
@@ -125,7 +124,7 @@ header{
 .left{
     width: 20%;
     height: 100vh;
-    background-color: #ffffffcf;
+    background-color: #ffffffba;
 
     display: flex;
     flex-direction: column;
@@ -141,21 +140,29 @@ header{
 
 }
 
-.cidades ul li{
+.cidades ul ul{
     list-style-type: none;
 }
 
-.cidades ul li a{
+.cidades ul ul a{
     font-size: 1.6rem;
     text-align: center;
     color: black;
     text-decoration: none;
 }
 
-.cidades ul li a:hover{
+.cidades ul ul a:hover{
     color: #0000ff;
 }
 
+.cidades ul ul li{
+    font-size: 1.2rem;
+}
+
+.litorais ul ul li{
+    color: #ff0000;
+
+}
 .valores{
     display: flex;
     justify-content: center;
