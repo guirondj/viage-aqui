@@ -163,13 +163,13 @@ header{
     color: #ff0000;
 
 }
+
 .valores{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 
 /* Lado direito */
 
@@ -195,12 +195,26 @@ header{
     justify-content: space-around;
     align-items: center;
 
-    width: 23vw;
+    width: 21vw;
     height: 50vh;
+
+    border-radius: 15px;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.521);
+    background-color: #ffffffa5;
+    
 }
 
+
+
 .card img{
-    width: 100%;
+    border-radius: 15px;
+    width: 90%;
     height: 12.5rem;
+    transition: 0.2s;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.521);   
+}
+
+.card img:hover{
+    transform: scale(1.1);
 }
 
