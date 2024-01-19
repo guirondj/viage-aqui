@@ -12,40 +12,51 @@ function abrirModal(){
 
 // Parte esquerda dos litorias 
 
-const cidades = {
-    cidade:{
-        sp:document.querySelector(".cidade"),
-    }
-};
+ const cidades = {
+     cidade:{
+         cidades: document.querySelector(".cidades"),
+         litoral:document.querySelector('.litorais'),
+     }
+ };
 
-const litorias = [
-    "Litoral Norte",
-    "Litoral Sul",
-];
+ const capitais = [
+     "São Paulo",
+     "Rio de Janeira",
+     "Salvador",
+     "Fortaleza"
+ ]
 
-function addLitoral(){
-    cidades.cidade.sp
-    
-    if(document.getElementsByClassName(cidades.cidade.sp) == document.getElementsByClassName(cidades.cidade.sp) ){
+ const litorias = [
+     "Litoral Norte",
+     "Litoral Sul",
+ ];
 
-        cidades.cidade.sp.classList.add('litorais');
+ let openlitoral = [];
 
-        criaLiLitoral();
-    }
+ for(let i =0; i < capitais.length; i++){
+     let box= document.createElement("a");
+     box.className = "cidade";
+     box.innerHTML = capitais[i];
+     box.onclick = hanleClick;
+     document.querySelector(".cidades").appendChild(box);
+ }
 
-    cidades.cidade.sp.addEventListener("click" , removeLirotal)
-};
+ function hanleClick() {
+     if(openlitoral.length < 2){
+         criaLiLitoral();
+         openlitoral.push(this);
+     }
 
-function removeLirotal(){
+     if(capitais.length == 2){
+           removeCidade();
+     }
+ }
 
-    cidades.cidade.sp.classList.remove('litorais');
-
-}
 
  function criaLiLitoral(){
 
      for(let i= 0; i < litorias.length; i++){
-         const itemLitoral = document.createElement("li");
+         const itemLitoral = document.createElement("a");
          itemLitoral.textContent = `${litorias[i]}`
          const texLitoral = document.createTextNode("");
 
@@ -53,6 +64,10 @@ function removeLirotal(){
 
          document.querySelector(".litorais").appendChild(itemLitoral);
      };
-   
+  
  };
 
+ function removeLirotal(){
+
+     cidades.cidade.litoral.classList.remove("litorais");
+ };

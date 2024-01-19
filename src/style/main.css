@@ -124,7 +124,7 @@ header{
 .left{
     width: 20%;
     height: 100vh;
-    background-color: #ffffffba;
+    background-color: #a2a2a298;
 
     display: flex;
     flex-direction: column;
@@ -132,37 +132,23 @@ header{
 
 }
 
-.cidades{
+a{
+    cursor: pointer;
+}
+
+.cidades a{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.cidades ul ul{
-    list-style-type: none;
-}
-
-.cidades ul ul a{
     font-size: 1.6rem;
     text-align: center;
     color: black;
     text-decoration: none;
 }
 
-.cidades ul ul a:hover{
+.cidades a:hover{
     color: #0000ff;
 }
 
-.cidades ul ul li{
-    font-size: 1.2rem;
-}
-
-.litorais ul ul li{
-    color: #ff0000;
-
-}
 
 .valores{
     display: flex;
@@ -203,8 +189,6 @@ header{
     background-color: #ffffffa5;
     
 }
-
-
 
 .card img{
     border-radius: 15px;
