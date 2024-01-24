@@ -41,42 +41,36 @@ const cidades = {
     document.querySelector(".cidades").appendChild(box);
   }
   
-  function handleClick() {
-    const isSelected = openlitoral.includes(this);
-  
-    if (isSelected) {
-      // Cidade já selecionada, remover litorais
-      removeLitorais();
-      openlitoral = openlitoral.filter(city => city !== this);
-    } else {
-      // Cidade não selecionada, adicionar litorais
-      createLitorais();
-      openlitoral.push(this);
-    }
+  function handleClick(){
   }
 
-  function createLitorais() {
-    // Remova os litorais existentes antes de adicionar novos
-    removeLitorais();
-  
-    for (let i = 0; i < litorias.length; i++) {
-      const itemLitoral = document.createElement("a");
-      itemLitoral.textContent = `${litorias[i]}`;
-      document.querySelector(".litorais").appendChild(itemLitoral);
-    }
-  
-    // Adicione a classe "litorais" para torná-los visíveis
-    cidades.cidade.litoral.classList.add("litorais");
+  // observa o que acontece ao clicar nas cidade 
+  const cidadeCriaLitoral = document.querySelector('.cidade');
+
+cidadeCriaLitoral.addEventListener("click", function (){
+  createLitorais(); 
+
+});
+
+//Adiciona os litorais nas cidades 
+
+ function createLitorais() {
+   // Remova os litorais existentes antes de adicionar novos
+   //removeLitorais();
+
+   for (let i = 0; i < litorias.length; i++) {
+     const itemLitoral = document.createElement("a");
+     itemLitoral.className = "litorais"
+     itemLitoral.textContent = `${litorias[i]}`;
+     document.querySelector(".cidade").appendChild(itemLitoral);
+   };
+
+ };
+
+ function removeLitorais(){
+  // Remova a classe "litorais" para ocultar os litorais
+  let lts = document.getElementsByClassName("litorais");
+  for(let i= 0; i < lts.length; i - lts.length){
+    lts[i].remove()
   };
-  
-  function removeLitorais() {
-    // Remova a classe "litorais" para ocultar os litorais
-    cidades.cidade.litoral.classList.remove("litorais");
-  
-    // Remova todos os elementos filhos dos litorais
-    const litoraisContainer = document.querySelector(".litorais");
-    while (litoraisContainer.firstChild) {
-      litoraisContainer.removeChild(litoraisContainer.firstChild);
-    }
-  }
-  
+ }

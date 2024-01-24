@@ -149,6 +149,10 @@ a{
     color: #0000ff;
 }
 
+a.litorais{
+    font-size: 1rem;
+    font-weight: bold;
+}
 
 .valores{
     display: flex;
