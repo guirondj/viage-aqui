@@ -44,11 +44,12 @@ const cidades = {
   function handleClick(){
   }
 
-  // observa o que acontece ao clicar nas cidade 
+// observa o que acontece ao clicar nas cidade 
+
   const cidadeCriaLitoral = document.querySelector('.cidade');
 
-cidadeCriaLitoral.addEventListener("click", function (){
-  createLitorais(); 
+  cidadeCriaLitoral.addEventListener("click", function (){
+    createLitorais(); 
 
 });
 
