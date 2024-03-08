@@ -6,7 +6,7 @@ body{
 }
 
 .debug{
-    border: solid 1px red;
+    border: solid 5px red;
 }
 
 /* Header */
@@ -198,11 +198,11 @@ a.litorais{
     border-radius: 15px;
     width: 90%;
     height: 12.5rem;
-    transition: 0.2s;
-    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.521);   
+    transition: 0.5s;
 }
 
 .card img:hover{
+    transition: 0.5s;
     transform: scale(1.1);
 }
 
